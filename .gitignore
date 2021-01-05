@@ -5,6 +5,10 @@
 .idea/encodings.xml
 /.idea/atlassian-ide-plugin.xml
 .vscode
+community-modules/vue/
+community-modules/react/
+community-modules/polymer/
+/community-modules/vue/src/
 
 .lernaBuildChain.cache.json
 
