@@ -95,6 +95,8 @@ export interface GridOptions {
     /*******************************************************************************************************
      * If you change the properties on this interface, you must also update PropertyKeys to be consistent. *
      *******************************************************************************************************/
+    // @MSWEB Changes
+    suppressFocusChangeStopEditing?: boolean;
 
     // set once in init, can never change
     suppressBrowserResizeObserver?: boolean;

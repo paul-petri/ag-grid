@@ -145,6 +145,8 @@ export class AgGridAngular implements AfterViewInit {
             console.log('ag-Grid-angular: could not find EventEmitter: ' + eventType);
         }
     }
+    // @MSWEB change
+    @Input() public suppressFocusChangeStopEditing : any = undefined;
 
     @Input() public gridOptions: GridOptions;
     @Input() public modules: Module[];

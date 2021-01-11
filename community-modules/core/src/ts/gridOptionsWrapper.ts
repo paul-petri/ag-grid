@@ -365,6 +365,11 @@ export class GridOptionsWrapper {
         return this.gridOptions.editType === 'fullRow';
     }
 
+    // @MSWEB change
+    public isSuppressFocusChangeStopEditing() {
+        return isTrue(this.gridOptions.suppressFocusChangeStopEditing);
+    }
+
     public isSuppressFocusAfterRefresh() {
         return isTrue(this.gridOptions.suppressFocusAfterRefresh);
     }

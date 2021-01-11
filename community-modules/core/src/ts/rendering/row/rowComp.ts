@@ -1391,6 +1391,10 @@ export class RowComp extends Component {
     }
 
     private onCellFocusChanged(): void {
+        if (this.beans.gridOptionsWrapper.isSuppressFocusChangeStopEditing() && this.editingRow) {
+            return;
+        }
+        
         const rowFocused = this.beans.focusController.isRowFocused(this.rowNode.rowIndex, this.rowNode.rowPinned);
 
         if (rowFocused !== this.rowFocused) {
